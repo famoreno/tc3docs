@@ -1,5 +1,7 @@
 # Conceptos generales (WIP)
 
+{==
+
 ## Leyenda
 
 - **CD**: Clic derecho del ratón
@@ -9,8 +11,9 @@
 - **CV**: Campus Virtual
 - **FB**: Bloque funcional (*Functional Block*)
 
----
+==}
 
+---
 ## Creación de proyectos en TwinCAT3
 
 ### Crear un proyecto de TwinCAT3
@@ -125,7 +128,7 @@
         - Hacer **CD** sobre la **etapa** a la que queramos asociar una acción no memoriza (o continua) y seleccionar **Insert action association** o **Insert action association after**, dependiendo de si queremos insertarla antes o después de las ya existentes (si las hay).
         - En la caja de la acción aparece en primer lugar el **modificador** (por defecto `N`, que significa **No memorizada**) y en segundo lugar el hueco donde debemos poner la acción a realizar (una variable booleana que queramos activar o una acción más compleja definida como acción asociada al bloque funcional).
       
-            ![Imagen](images/cb/image%205.png)
+            ![Imagen](images/cb/image%205.png){width=288px}
 
             - Tipos de modificadores de acciones
                 - **<u>Importante</u>**: Usaremos, por defecto, las acciones no memorizadas, aunque se pueden usar las otras si tiene sentido para el proyecto.
@@ -148,19 +151,22 @@
                 - Normalmente usaremos estas acciones para inicializar variables memorizadas, actualizar contadores, etc.
                 - Para crear una de este tipo, hacer **CD** sobre la etapa donde la queremos asociar y seleccionar **Add entry action**.
                 - Aparece un popup donde se nos pregunta por el nombre que le queremos poner y el lenguaje a utilizar. Se recomienda dejar el nombre por defecto (`S0_entry` en la figura) ya que nos indica en qué etapa está y de qué tipo es.
-                    ![Imagen](images/cb/image%206.png)
+                    ![Imagen](images/cb/image%206.png){width=384px}
+
                 - En nuestros proyectos, **estas acciones siempre serán en ST**, pero podrían ser implementadas en cualquier otro lenguaje de la norma.
                 - Una vez creada, aparece en el SFC como un cuadrado con una E en la esquina inferior izquierda de la etapa.
-                    ![Imagen](images/cb/image%207.png)
+                 
+                    ![Imagen](images/cb/image%207.png){width=288px}
+
             - **A la salida**
                 - Las acciones con activación **a la salida** se ejecutan solo una vez inmediatamente antes de pasar a la siguiente etapa. Esto implica que **antes** de que se ejecute esta acción, la condición de transición para pasar a la siguiente etapa **debe ser cierta**.
                 - Normalmente usaremos estas acciones para inicializar variables memorizadas, actualizar contadores, etc.
                 - Para crear una de este tipo, hacer **CD** sobre la etapa donde la queremos asociar y seleccionar **Add exit action**.
                 - Aparece un *popup* donde se nos pregunta por el nombre que le queremos poner y el lenguaje a utilizar. Se recomienda dejar el nombre por defecto (`S0_exit` en la figura) ya que nos indica en qué etapa está y de qué tipo es.
-                    ![Imagen](images/cb/image%208.png)
+                    ![Imagen](images/cb/image%208.png){width=384px}
                 - En nuestros proyectos, **estas acciones siempre serán en ST**, pero podrían ser implementadas en cualquier otro lenguaje de la norma.
                 - Una vez creada, aparece en el SFC como un cuadrado con una **E** en la esquina inferior izquierda de la etapa.
-                    ![Imagen](images/cb/image%209.png)
+                    ![Imagen](images/cb/image%209.png){width=288px}
     - Asociar una **acción principal** a un etapa <font color="#FF0000">[TODO]</font>
 ---
 
@@ -172,7 +178,7 @@
 
 - Normalmente, al final de la secuencia se producirá un salto hacia atrás (o el inicio) en el programa.
 
-    ![Imagen](images/cb/image%2010.png)
+    ![Imagen](images/cb/image%2010.png){width=288px}
 
 - Para insertar un salto detrás de una transición, hay que hacer **CD** sobre la transición y seleccionar **Insert jump after**. Solo hay que indicar el nombre de la etapa a la que queremos saltar.
 
@@ -182,7 +188,7 @@
 
 - En el ejemplo de la figura, si la etapa `Init` está activa y se activa `Execute`, el programa evolucionará por la rama de la izquierda llegando a `S0`. Si lo que se activa es `Restore`, el programa evolucionará por la derecha pasando a `Sr` y, una vez se active `Restaurado`, la secuencia pasará a `S0`.
 
-    ![Imagen](images/cb/image%2011.png)
+    ![Imagen](images/cb/image%2011.png){width=336px}
 
 - Para realizar una bifurcación, hacer **CD** sobre la **transición** donde se quiera hacer la bifurcación (`Execute` en el ejemplo) y seleccionar **Insert branch right**.
 
@@ -198,7 +204,7 @@
 
 - En el ejemplo de la figura, si la etapa `Init` está activa y se activa `Execute`, el programa evolucionará por ambas ramas a la vez, activando los estados `S0` y `Sr` de manera simultánea (y por tanto, `LuzRoja` y `Restaura`).
 
-    ![Imagen](images/cb/image%2012.png)
+    ![Imagen](images/cb/image%2012.png){width=480px}
 
 - En la transición con condición `NOT Pulsador OR S0.t>T#5s` se produce un punto de sincronización ya que, para que el programa evolucione a `S1` debe ocurrir que `S0` y `Sr2` estén activas y, además, que la condición `NOT Pulsador OR S0.t>T#5s` sea cierta. Por tanto, podemos decir que el programa *esperará* hasta que termine la rama de la derecha antes de evolucionar.
 
@@ -210,7 +216,7 @@
 
 - Seleccionar `Add → Visualization` y pulsar en **Open** en la ventana *popup*.
 
-    ![Imagen](images/cb/image%2013.png)
+    ![Imagen](images/cb/image%2013.png){width=240px}
 
 - En la parte derecha de la pantalla aparecerá la sección `Toolbox` donde, en la sección `Basic` aparecen las formas básicas. Arrastrar a la visualización los elementos que se quieran.
 
@@ -228,11 +234,11 @@
 
     - Si queremos que la variable cambie de valor **mientras** se pulsa el botón con el ratón pero vuelva a su valor anterior una vez soltado el ratón, introduciremos la variable en la sección `Tap`:
 
-        ![Imagen](images/cb/image%2014.png)
+        ![Imagen](images/cb/image%2014.png){width=240px}
 
     - Si queremos que la variable cambie de valor cada vez que pulsemos el botón (el valor conmutará entre `TRUE` y `FALSE`) lo introduciremos en la sección `Toggle`:
 
-        ![Imagen](images/cb/image%2015.png)
+        ![Imagen](images/cb/image%2015.png){width=240px}
 
 ---
 
