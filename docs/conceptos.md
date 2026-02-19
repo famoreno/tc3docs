@@ -53,7 +53,7 @@
           6. `VISUs`. Visualizaciones creadas.
           7. Tarea creada (`PLCTask`) y programa `MAIN`
    
-            ![Imagen](images/cb/image%204.png)
+            ![Imagen](images/cb/image%204.png){width=132px}
     
     2. `Instance`. Aquí aparecerán las variables en las imágenes de Entrada y Salida.
  
