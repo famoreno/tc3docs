@@ -35,6 +35,7 @@ theme:
 
 nav:
   - Inicio: index.md
+  - Beckhoff y TwinCAT 3: tc3_presentacion.md
   - TC3 Conceptos Generales: conceptos.md
   - TC3 Demo: readme_tc3_demo.md
 
