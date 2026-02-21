@@ -1,0 +1,2617 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://famoreno.github.io/tc3_docs/contenidos/01_conceptos/">
+      
+      
+        <link rel="prev" href="../00_presentacion/">
+      
+      
+        <link rel="next" href="../02_tc3_demo/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/_resource/AutoISATeam_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>TC3 Conceptos Generales - TC3 Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conceptos-generales" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="TC3 Docs" class="md-header__button md-logo" aria-label="TC3 Docs" data-md-component="logo">
+      
+  <img src="../../images/_resource/AutoISATeam_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TC3 Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TC3 Conceptos Generales
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TC3 Docs" class="md-nav__button md-logo" aria-label="TC3 Docs" data-md-component="logo">
+      
+  <img src="../../images/_resource/AutoISATeam_logo.png" alt="logo">
+
+    </a>
+    TC3 Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_presentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beckhoff y TwinCAT 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TC3 Conceptos Generales
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TC3 Conceptos Generales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crear-soluciones-en-tc3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ Crear soluciones en TC3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Crear soluciones en TC3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-proyecto-tc3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear proyecto TC3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-proyecto-plc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear proyecto PLC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-bloque-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear bloque funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaracion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏷️ Declaración de variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏷️ Declaración de variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables-locales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables locales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables de entrada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-de-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables de salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-de-entrada-y-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables de entrada y salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-vinculadas-a-la-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables vinculadas a la E/S
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables vinculadas a la E/S">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zona-de-marcas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zona de marcas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagen-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagen de entrada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagen-de-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagen de salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-duts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👫 Creación de DUTs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👫 Creación de DUTs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructuras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructuras
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumeraciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lenguaje-st" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📄 Lenguaje ST
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📄 Lenguaje ST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintaxis general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructuras-de-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructuras de control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lenguaje-sfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⤵️ Lenguaje SFC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⤵️ Lenguaje SFC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reglas-sintacticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reglas sintácticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-etapa-transicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Añadir etapa / transición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asociar-acciones-a-etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asociar acciones a etapas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asociar acciones a etapas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accion-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acción continua
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accion-de-entrada-o-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acción de entrada o salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accion-principal-todo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acción principal (TODO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructuras-de-evolucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔀 Estructuras de evolución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔀 Estructuras de evolución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia básica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bifurcacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bifurcación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paralelismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paralelismo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-visualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖥️ Crear visualización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Crear visualización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#botones-para-cambiar-valores-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Botones para cambiar valores de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportar-e-importar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 Exportar e importar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guardar-y-mover-proyectos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 Guardar y mover proyectos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 Guardar y mover proyectos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usando-la-carpeta-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usando la carpeta completa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportando-como-tnzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportando como .tnzip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usando-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usando GIT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convenciones-de-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Convenciones de nombres
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Convenciones de nombres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soluciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soluciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyectos-twincat3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyectos TwinCAT3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyectos-plc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyectos PLC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloques-funcionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloques Funcionales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecutar-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ▶️ Ejecutar programa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activardesactivar-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔌 Activar/desactivar hardware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#busqueda-de-equipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 Búsqueda de equipos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlace-de-variables-y-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlace de variables y E/S
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_tc3_demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TC3 Demo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crear-soluciones-en-tc3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ Crear soluciones en TC3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Crear soluciones en TC3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-proyecto-tc3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear proyecto TC3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-proyecto-plc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear proyecto PLC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-bloque-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear bloque funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaracion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏷️ Declaración de variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏷️ Declaración de variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables-locales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables locales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables de entrada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-de-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables de salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-de-entrada-y-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables de entrada y salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-vinculadas-a-la-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables vinculadas a la E/S
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables vinculadas a la E/S">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zona-de-marcas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zona de marcas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagen-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagen de entrada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagen-de-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagen de salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-duts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👫 Creación de DUTs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👫 Creación de DUTs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructuras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructuras
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumeraciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lenguaje-st" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📄 Lenguaje ST
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📄 Lenguaje ST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sintaxis general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructuras-de-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructuras de control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lenguaje-sfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⤵️ Lenguaje SFC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⤵️ Lenguaje SFC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reglas-sintacticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reglas sintácticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-etapa-transicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Añadir etapa / transición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asociar-acciones-a-etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asociar acciones a etapas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asociar acciones a etapas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accion-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acción continua
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accion-de-entrada-o-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acción de entrada o salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accion-principal-todo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acción principal (TODO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructuras-de-evolucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔀 Estructuras de evolución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔀 Estructuras de evolución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia básica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bifurcacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bifurcación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paralelismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paralelismo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-visualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖥️ Crear visualización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Crear visualización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#botones-para-cambiar-valores-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Botones para cambiar valores de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportar-e-importar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 Exportar e importar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guardar-y-mover-proyectos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 Guardar y mover proyectos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 Guardar y mover proyectos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usando-la-carpeta-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usando la carpeta completa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportando-como-tnzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportando como .tnzip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usando-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usando GIT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convenciones-de-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Convenciones de nombres
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Convenciones de nombres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soluciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soluciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyectos-twincat3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyectos TwinCAT3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyectos-plc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyectos PLC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloques-funcionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloques Funcionales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecutar-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ▶️ Ejecutar programa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activardesactivar-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔌 Activar/desactivar hardware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#busqueda-de-equipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 Búsqueda de equipos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlace-de-variables-y-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlace de variables y E/S
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="conceptos-generales">✔ Conceptos generales<a class="headerlink" href="#conceptos-generales" title="Permanent link">&para;</a></h1>
+<details class="info">
+<summary>Leyenda</summary>
+<table>
+<thead>
+<tr>
+<th>Abrev.</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CD</strong></td>
+<td>Clic derecho del ratón</td>
+</tr>
+<tr>
+<td><strong>CI</strong></td>
+<td>Clic izquierdo del ratón</td>
+</tr>
+<tr>
+<td><strong>DCI</strong></td>
+<td>Doble clic izquierdo del ratón</td>
+</tr>
+<tr>
+<td><strong>TC3</strong></td>
+<td>TwinCAT3</td>
+</tr>
+<tr>
+<td><strong>CV</strong></td>
+<td>Campus Virtual</td>
+</tr>
+<tr>
+<td><strong>FB</strong></td>
+<td>Bloque funcional (<em>Functional Block</em>)</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="crear-soluciones-en-tc3">🏗️ Crear soluciones en TC3<a class="headerlink" href="#crear-soluciones-en-tc3" title="Permanent link">&para;</a></h2>
+<h3 id="crear-proyecto-tc3">Crear proyecto TC3<a class="headerlink" href="#crear-proyecto-tc3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Abrir el <em>software</em> <code>Twincat XAE Shell</code>, desde el menú <strong>Inicio</strong> de Windows o desde el icono de la barra de programas en segundo plano que hay abajo a la derecha en la barra de tareas.</li>
+<li>
+<p>Seleccionar <strong><em>New TwinCAT Project</em></strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image.png" width="240px" /></p>
+</li>
+<li>
+<p>Seleccionar el tipo <strong><em>TwinCAT XAE Project (XML format)</em></strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%201.png" width="384px" /></p>
+</li>
+<li>
+<p>Darle un nombre a la <strong>Solución</strong>, y seleccionar su ubicación (la que viene por defecto está bien). Dejar marcada la opción <strong><em>Create directory for solution</em></strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%202.png" width="768px" /></p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>TC3_Lampara</code>  </p>
+</div>
+</li>
+<li>
+<p>Por defecto, tanto la <strong>Solución</strong> de Visual Studio como el proyecto de <strong>TC3</strong> tendrán el mismo nombre.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Recomendación</p>
+<p>Ocultar las secciones del proyecto que no se van a utilizar: <code>MOTION</code>, <code>SAFETY</code>, <code>C++</code>, <code>VISION</code>, <code>ANALYTICS</code>.
+Nos quedaremos solo con <code>SYSTEM</code>, <code>PLC</code> e <code>I/O</code>.</p>
+</div>
+<h3 id="crear-proyecto-plc">Crear proyecto PLC<a class="headerlink" href="#crear-proyecto-plc" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Una vez creado un proyecto de TC3, procedemos a crear un proyecto PLC.</li>
+<li>Hacer <strong>CD</strong> sobre la sección <code>PLC</code> y seleccionar <strong><em>Add New Item</em></strong>.</li>
+<li>
+<p>Seleccionar <strong><em>Standard PLC Project</em></strong>, darle un nombre y pulsar <strong><em>Add</em></strong>.<br />
+<img alt="Imagen" src="../../images/01_conceptos/image%203.png" width="384px" /></p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>Lampara_PLC</code></p>
+</div>
+</li>
+<li>
+<p>En la sección de <code>SYSTEM &gt; Tasks</code> aparecerá por defecto una nueva tarea <code>PLC Task</code> con sus parámetros por defecto (ej. 10 ms de ciclo).</p>
+</li>
+<li>
+<p>En la sección <code>PLC</code> aparece el proyecto con dos secciones nuevas:</p>
+<ol>
+<li>
+<p><code>Project</code></p>
+<ol>
+<li><code>External Types</code>. Almacena definiciones de tipos de datos externos que provienen de fuentes externas al PLC.</li>
+<li><code>References</code>. Listado de referencias a las librerías utilizadas en el proyecto.</li>
+<li><code>DUTs</code>. Tipos de Dato de Usuario (<em>Data User Types</em>) (<code>ENUM</code>, <code>STRUCT</code>).</li>
+<li><code>GVLs</code>. Listas de Variables Globales (<em>Global Variables Lists</em>).</li>
+<li><code>POUs</code>. Unidades de Organización del Programa (Program Organization Units). Programas, bloques funcionales y funciones que implementaremos.</li>
+<li><code>VISUs</code>. Visualizaciones creadas.</li>
+<li>
+<p>Tarea creada (<code>PLCTask</code>) y programa <code>MAIN</code></p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%204.png" width="132px" /></p>
+</li>
+</ol>
+</li>
+<li>
+<p><code>Instance</code>. Aquí aparecerán las variables en las imágenes de Entrada y Salida.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>A partir de aquí se puede empezar a implementar el proyecto.</p>
+</li>
+</ol>
+<h3 id="crear-bloque-funcional">Crear bloque funcional<a class="headerlink" href="#crear-bloque-funcional" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Hacer <strong>CD</strong> sobre la sección <code>POUs</code>.</li>
+<li>Seleccionar <code>Add → POU → Functional Block</code>.</li>
+<li>Darle un nombre significativo.</li>
+<li>Seleccionar el lenguaje a utilizar. Normalmente utilizaremos <code>ST</code> o <code>SFC</code>.</li>
+</ol>
+<hr />
+<h2 id="declaracion-de-variables">🏷️ Declaración de variables<a class="headerlink" href="#declaracion-de-variables" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Recomendación</p>
+<p>Se recomienda utilizar la convención <strong><a href="https://es.wikipedia.org/wiki/Camel_case">CamelCase</a></strong> para declarar las variables.</p>
+<p>Como convención adicional, añadiremos un prefijo <code>i_</code> para aquellas variables que se declaren en la zona de entrada y <code>o_</code> para las de la zona de salida.</p>
+</div>
+<ul>
+<li>Independientemente del lenguaje utilizado para implementar el código, las variables se declaran de la misma manera.</li>
+<li>Las variables se declaran en la caja superior de la ventana del bloque funcional creado.</li>
+<li>La sintaxis para la declaración de variables es la siguiente:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="n">NombreVariable</span><span class="o">&gt;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">tipo</span><span class="o">&gt;</span><span class="w"> </span><span class="p">[</span><span class="o">:=&lt;</span><span class="n">ValorInicial</span><span class="o">&gt;</span><span class="p">]</span>
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// bool</span>
+<span class="n">Pulsador</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">LuzAmarilla</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="k">TRUE</span><span class="o">;</span>
+
+<span class="c1">// enteros con y sin signo</span>
+<span class="n">Altura</span><span class="o">:</span><span class="w"> </span><span class="nb">INT</span><span class="o">;</span>
+<span class="n">Contador</span><span class="o">:</span><span class="w"> </span><span class="n">UINT</span><span class="o">;</span>
+<span class="n">UnidadesSolicitadas</span><span class="o">:</span><span class="w"> </span><span class="n">UINT</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">10</span><span class="o">;</span>
+
+<span class="c1">// números reales</span>
+<span class="n">TpoSegundos</span><span class="o">:</span><span class="w"> </span><span class="n">FLOAT</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mf">1.2</span><span class="o">;</span>
+
+<span class="c1">// tiempo</span>
+<span class="n">TiempoEspera</span><span class="o">:</span><span class="w"> </span><span class="nb">TIME</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">T</span><span class="sc">#2</span><span class="n">s</span><span class="o">;</span>
+<span class="n">TiempoRestante</span><span class="o">:</span><span class="w"> </span><span class="nb">TIME</span><span class="o">;</span>
+
+<span class="c1">// bloques funcionales</span>
+<span class="n">Flanco_Pulsador</span><span class="o">:</span><span class="w"> </span><span class="n">R_TRIG</span><span class="o">;</span><span class="w"> </span><span class="c1">// detector de flanco (estándar)</span>
+<span class="n">Coordinador</span><span class="o">:</span><span class="w"> </span><span class="n">FB_Coordinador</span><span class="o">;</span><span class="w"> </span><span class="c1">// bloque funcional definido por el usuario</span>
+
+<span class="c1">// arrays</span>
+<span class="n">Ocupado</span><span class="o">:</span><span class="w"> </span><span class="k">ARRAY</span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span><span class="w"> </span><span class="c1">// array de cuatro elementos de tipo BOOL; acceso con []</span>
+</code></pre></div>
+</div>
+<ul>
+<li>
+<p>La sintaxis de los valores posibles es la siguiente:</p>
+<ul>
+<li><strong>Variables booleanas:</strong> <code>TRUE</code>, <code>FALSE</code>.</li>
+<li><strong>Variables enteras:</strong> <code>0</code>, <code>1</code>, etc.</li>
+<li><strong>Variables reales:</strong> <code>0.1</code>, <code>2.3</code>, etc.</li>
+<li>
+<p><strong>Variables de tiempo:</strong> <code>T#&lt;tiempo&gt;</code> donde <code>&lt;tiempo&gt;</code> debe ser del estilo <code>&lt;numero&gt;&lt;unidad&gt;</code>, siendo <code>&lt;unidad&gt;</code> escogido de <code>{s, ms}</code>.</p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>T#2s</code> (dos segundos)</p>
+<p><code>T#500ms</code> (quinientos milisegundos).</p>
+</div>
+</li>
+<li>
+<p>El acceso a los <em>arrays</em> se hace con el índice entre corchetes. </p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>Ocupado[1] := TRUE;</code></p>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p>Las variables en TC3 se declaran dentro de los ámbitos existentes en el POU correspondiente: <strong>marcas</strong> (locales), <strong>entrada</strong> y <strong>salida</strong>.</p>
+</li>
+</ul>
+<h3 id="variables-locales">Variables locales<a class="headerlink" href="#variables-locales" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">FUNCTIONAL_BLOCK</span><span class="w"> </span><span class="n">FB_Estacion</span>
+<span class="k">VAR</span>
+<span class="w">    </span><span class="n">Contador</span><span class="o">:</span><span class="w"> </span><span class="n">UINT</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+<p>Las variables declaradas aquí se pueden utilizar dentro del POU pero <strong>no</strong> pueden tomar valores de fuera del POU ni se pueden acceder desde fuera del POU.</p>
+<h3 id="variables-de-entrada">Variables de entrada<a class="headerlink" href="#variables-de-entrada" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">FUNCTIONAL_BLOCK</span><span class="w"> </span><span class="n">FB_Estacion</span>
+<span class="n">VAR_INPUT</span>
+<span class="w">    </span><span class="n">TiempoEntrada</span><span class="o">:</span><span class="w"> </span><span class="nb">TIME</span><span class="o">;</span>
+<span class="w">    </span><span class="n">TiempoSalida</span><span class="o">:</span><span class="w"> </span><span class="nb">TIME</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">T</span><span class="sc">#2</span><span class="n">s</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+<p>Las variables declaradas aquí <strong>deben</strong> ser especificadas al llamar al <strong>FB</strong> (a no ser que se les de un valor por defecto).</p>
+<div class="admonition tip">
+<p class="admonition-title">Importante</p>
+<p>No especificarlas en la llamada produce un error de compilación.</p>
+</div>
+<h3 id="variables-de-salida">Variables de salida<a class="headerlink" href="#variables-de-salida" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">FUNCTIONAL_BLOCK</span><span class="w"> </span><span class="n">FB_Estacion</span>
+<span class="n">VAR_OUTPUT</span>
+<span class="w">    </span><span class="n">LuzAmarilla</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="w">    </span><span class="n">LuzVerde</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+<p>Las variables declaradas aquí pueden ser accedidas desde fuera del <strong>FB</strong> (por ejemplo, desde otro <strong>FB</strong> que llama a este, o desde el programa <code>MAIN</code>).</p>
+<div class="highlight"><pre><span></span><code><span class="k">PROGRAM</span><span class="w"> </span><span class="n">MAIN</span>
+<span class="k">VAR</span>
+<span class="w">    </span><span class="n">Estacion</span><span class="o">:</span><span class="w"> </span><span class="n">FB_Estacion</span>
+<span class="w">    </span><span class="n">LuzAmarillaEstacion</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+<span class="o">------------------</span>
+<span class="n">LuzAmarillaEstacion</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">Estacion</span><span class="o">.</span><span class="n">LuzAmarilla</span><span class="o">;</span><span class="w"> </span><span class="c1">// esto es válido</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Importante</p>
+<p>Querer acceder a una variable de un <strong>FB</strong> que no ha sido declarada como salida produce un error de compilación.</p>
+</div>
+<h3 id="variables-de-entrada-y-salida">Variables de entrada y salida<a class="headerlink" href="#variables-de-entrada-y-salida" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">FUNCTIONAL_BLOCK</span><span class="w"> </span><span class="n">FB_Estacion</span>
+<span class="n">VAR_IN_OUT</span>
+<span class="w">    </span><span class="n">Contador</span><span class="o">:</span><span class="w"> </span><span class="n">UINT</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+<p>Este ámbito no aparece por defecto al crear un <strong>FB</strong> pero puede ser añadido simplemente escribiendo la sección <code>VAR_IN_OUT ... END_VAR</code>.</p>
+<p>Las variables declaradas aquí deben tomar un valor como entrada al <strong>FB</strong> y su valor final tras cada ciclo puede ser accedido desde fuera del <strong>FB</strong>.</p>
+<p>Combina las condiciones de los ámbitos de entrada y salida.</p>
+<ul>
+<li>En un programa (ej. <code>MAIN</code>) sólo disponemos del ámbito <code>VAR</code>.</li>
+<li>En un <strong>FB</strong>, además del ámbito <code>VAR</code>, disponemos de los ámbitos <code>VAR_INPUT</code> y <code>VAR_OUTPUT</code>.</li>
+</ul>
+<hr />
+<h3 id="variables-vinculadas-a-la-es">Variables vinculadas a la E/S<a class="headerlink" href="#variables-vinculadas-a-la-es" title="Permanent link">&para;</a></h3>
+<p>Recuerda que la memoria del PLC está estructurada en tres secciones: la <strong>imagen de entrada</strong>, la <strong>imagen de salida</strong> y la <strong>zona de marcas</strong>.</p>
+<h4 id="zona-de-marcas">Zona de marcas<a class="headerlink" href="#zona-de-marcas" title="Permanent link">&para;</a></h4>
+<p>Aquí se guardarán aquellas variables que son internas al programa y no van a ser vinculadas con terminales de entrada y salida.</p>
+<p>Las variables declaradas con la siguiente sintaxis se guardan en la zona de marcas:</p>
+<div class="highlight"><pre><span></span><code><span class="k">VAR</span>
+<span class="w">    </span><span class="n">Pulsador</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="w">    </span><span class="n">Contador</span><span class="o">:</span><span class="w"> </span><span class="n">UINT</span><span class="o">;</span>
+<span class="w">    </span><span class="n">Lampara</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+<h4 id="imagen-de-entrada">Imagen de entrada<a class="headerlink" href="#imagen-de-entrada" title="Permanent link">&para;</a></h4>
+<p>Aquí se guardarán las variables que queremos vincular a las <strong>entradas físicas</strong> del sistema.</p>
+<p>Su sintaxis añade <code>AT %I*</code> antes de la definición del tipo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">VAR</span>
+<span class="w">    </span><span class="n">i_Pulsador</span><span class="w"> </span><span class="n">AT</span><span class="w"> </span><span class="err">%</span><span class="n">I</span><span class="o">*:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Recuerda que en nuestro trabajo usaremos la convención de añadir un prefijo <code>i_</code> delante de estas variables.</p>
+</div>
+<h4 id="imagen-de-salida">Imagen de salida<a class="headerlink" href="#imagen-de-salida" title="Permanent link">&para;</a></h4>
+<p>Aquí se guardarán las variables que queremos vincular a las <strong>salidas físicas</strong> del sistema.</p>
+<p>Su sintaxis añade <code>AT %Q*</code> antes de la definición del tipo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">VAR</span>
+<span class="w">    </span><span class="n">o_Lampara</span><span class="w"> </span><span class="n">AT</span><span class="w"> </span><span class="err">%</span><span class="n">Q</span><span class="o">*:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Recuerda que en nuestro trabajo usaremos la convención de añadir un prefijo <code>o_</code> delante de estas variables.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Declarar una variable en la imagen de entrada o salida es <strong>independiente</strong> de que sean entradas o salidas del bloque funcional.</p>
+<p>Estas declaraciones son completamente correctas.</p>
+<div class="highlight"><pre><span></span><code><span class="n">VAR_INPUT</span>
+<span class="w">    </span><span class="n">Pulsador</span><span class="w"> </span><span class="n">AT</span><span class="w"> </span><span class="err">%</span><span class="n">I</span><span class="o">*:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="w">    </span><span class="n">LamparaAmarilla</span><span class="w"> </span><span class="n">AT</span><span class="w"> </span><span class="err">%</span><span class="n">Q</span><span class="o">*:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="w">    </span><span class="n">TiempoEspera</span><span class="o">:</span><span class="w"> </span><span class="nb">TIME</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+
+<span class="k">VAR</span>
+<span class="w">    </span><span class="n">LamparaMarcha</span><span class="w"> </span><span class="n">AT</span><span class="w"> </span><span class="err">%</span><span class="n">Q</span><span class="o">*:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+
+<span class="n">VAR_OUTPUT</span>
+<span class="w">    </span><span class="n">PresenciaPale</span><span class="w"> </span><span class="n">AT</span><span class="w"> </span><span class="err">%</span><span class="n">I</span><span class="o">*:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+</code></pre></div>
+</div>
+<hr />
+<h2 id="creacion-de-duts">👫 Creación de DUTs<a class="headerlink" href="#creacion-de-duts" title="Permanent link">&para;</a></h2>
+<p>Además de los tipos de datos simples (<code>BOOL</code>, <code>INT</code>, etc.) y los bloques funcionales ya existentes (<code>R_TRIG</code>) o creados por nosotros (<code>FB_Coordinador_ST</code>), en ocasiones podemos necesitar crear tipos de dato que están compuestos por otros tipos de dato. A estos tipos de datos se les denomina <strong>tipos de unidad de datos</strong> (<em>Data Unit Type</em>, DUT).</p>
+<p>En nuestros proyectos vamos a poder hacer uso de dos de ellos: </p>
+<ul>
+<li><strong>Estructuras</strong> (<code>STRUCT</code>)</li>
+<li><strong>Enumeraciones</strong> (<code>ENUM</code>).</li>
+</ul>
+<h3 id="estructuras">Estructuras<a class="headerlink" href="#estructuras" title="Permanent link">&para;</a></h3>
+<p>Aglutinan en su interior otros tipos de dato y se definen haciendo <strong>CD</strong> sobre la carpeta DUTs y escogiendo <code>Add → DUT</code>:</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2016.png" width="240px" /></p>
+<p>Se le da un nombre significativo (se recomienda comenzar con <code>ST</code> como, por ejemplo, <code>ST_PIEZA</code>), se deja marcado <strong><em>Structure</em></strong> y se pulsa en <strong><em>Open</em></strong>.</p>
+<p>Se abrirá una ventana de texto para definir los componentes del tipo de dato:</p>
+<div class="highlight"><pre><span></span><code><span class="k">TYPE</span><span class="w"> </span><span class="n">ST_PIEZA</span><span class="w"> </span><span class="o">:</span>
+<span class="n">STRUCT</span>
+<span class="w">    </span><span class="n">Blanca</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="w">    </span><span class="n">Baja</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="w">    </span><span class="n">Tamano</span><span class="o">:</span><span class="w"> </span><span class="nb">INT</span><span class="o">;</span>
+<span class="w">    </span><span class="n">Tiempo</span><span class="o">:</span><span class="w"> </span><span class="nb">TIME</span><span class="o">;</span>
+<span class="n">END_STRUCT</span>
+<span class="n">END_TYPE</span>
+</code></pre></div>
+<p>Para usarlo, se define una variable de ese tipo y se accede a sus componentes mediante el operador <code>.</code> (punto):</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Definicion de variables</span>
+<span class="k">VAR</span>
+<span class="w">    </span><span class="n">Pieza</span><span class="o">:</span><span class="w"> </span><span class="n">ST_PIEZA</span><span class="o">;</span>
+<span class="w">    </span><span class="n">Baja</span><span class="o">:</span><span class="w"> </span><span class="kt">BOOL</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+<span class="o">--------------------------------</span>
+<span class="c1">// Implementacion</span>
+<span class="n">Pieza</span><span class="o">.</span><span class="n">Blanca</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="k">TRUE</span><span class="o">;</span>
+<span class="n">Baja</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">(</span><span class="n">Pieza</span><span class="o">.</span><span class="n">Tamano</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="o">;</span>
+<span class="n">Pieza</span><span class="o">.</span><span class="n">Tiempo</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">T</span><span class="sc">#1</span><span class="n">s</span><span class="o">;</span>
+</code></pre></div>
+<h3 id="enumeraciones">Enumeraciones<a class="headerlink" href="#enumeraciones" title="Permanent link">&para;</a></h3>
+<p>Una enumeración (<code>ENUM</code>) es un tipo de datos definido por el usuario compuesto por una serie de componentes separados por comas, también llamados valores de enumeración, que se utiliza para declarar variables definidas por el usuario.</p>
+<p>Se definen haciendo <strong>CD</strong> sobre la carpeta DUTs y escogiendo <code>Add → DUT</code>:</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2016.png" width="240px" /></p>
+<p>Se le da un nombre significativo (se recomienda comenzar con <code>E</code> como, por ejemplo,  <code>E_ColorBasic</code>), se deja marcado <strong><em>Enumeration</em></strong> y se pulsa en <strong><em>Open</em></strong>.</p>
+<p>Se abrirá una ventana de texto para definir los componentes del tipo de dato:</p>
+<div class="highlight"><pre><span></span><code><span class="cm">{attribute &#39;qualified_only&#39;}</span>
+<span class="cm">{attribute &#39;strict&#39;}</span>
+<span class="k">TYPE</span><span class="w"> </span><span class="n">E_ColorBasic</span><span class="w"> </span><span class="o">:</span>
+<span class="p">(</span>
+<span class="w">    </span><span class="n">eRed</span><span class="o">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">eYellow</span><span class="o">,</span>
+<span class="w">    </span><span class="n">eGreen</span><span class="o">,</span>
+<span class="w">    </span><span class="n">eBlue</span><span class="o">,</span>
+<span class="w">    </span><span class="n">eBlack</span>
+<span class="p">)</span><span class="w"> </span><span class="c1">// Basic data type is INT, default initialization is eRed</span>
+<span class="o">;</span>
+<span class="n">END_TYPE</span>
+</code></pre></div>
+<p>Una variable definida con el tipo <code>E_ColorBasic</code> es, en realidad, de tipo <code>INT</code> y solo puede tomar los valores definidos en <code>E_ColorBasic</code>: <code>eRed</code>, <code>eYellow</code>, etc.</p>
+<p>Cada uno de esos valores tiene un valor <code>INT</code> asociado, comenzando por el cero: <code>eRed = 0</code>, <code>eYellow = 1</code>, etc.</p>
+<p>Para usarlo, se define una variable de ese tipo y se le asigna el valor deseado usando el nombre del tipo de dato <strong><em>Enumeration</em></strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Definicion de variables</span>
+<span class="k">VAR</span>
+<span class="w">    </span><span class="n">Color</span><span class="o">:</span><span class="w"> </span><span class="n">E_ColorBasic</span><span class="o">;</span>
+<span class="n">END_VAR</span>
+<span class="o">--------------------------------</span>
+<span class="c1">// Implementacion</span>
+<span class="n">Color</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">E_ColorBasic</span><span class="o">.</span><span class="n">eYellow</span><span class="o">;</span><span class="w"> </span><span class="c1">// asignacion de valor</span>
+<span class="k">IF</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="n">E_ColorBasic</span><span class="o">.</span><span class="n">eRed</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="c1">// comprobacion de valor</span>
+<span class="w">    </span><span class="p">[</span><span class="o">...</span><span class="p">]</span>
+<span class="n">END_IF</span>
+</code></pre></div>
+<hr />
+<h2 id="lenguaje-st">📄 Lenguaje ST<a class="headerlink" href="#lenguaje-st" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Recomendación</p>
+<p>Es recomendable acceder a la ayuda y documentación del lenguaje ST (<em>Structured Text</em>) que ofrece Beckhoff en su portal <strong><a href="https://infosys.beckhoff.com/">Infosys</a></strong>.</p>
+</div>
+<h3 id="sintaxis-general">Sintaxis general<a class="headerlink" href="#sintaxis-general" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Las <strong>instrucciones</strong> deben terminar con <code>;</code>.</li>
+<li>Los <strong>comentarios</strong> se pueden realizar con <code>//</code> hasta final de línea o metiendo el texto entre <code>(*</code> y <code>*)</code>.</li>
+<li>La <strong>asignación</strong> de valores entre variables se realiza con el operador <code>:=</code>.</li>
+<li>La <strong>comparación</strong> de valores se realiza con los operadores <code>=</code>, <code>&lt;&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>.</li>
+<li>Las <strong>operaciones lógicas</strong> se realizan con los operadores <code>AND</code>, <code>OR</code> y <code>NOT</code>.</li>
+<li>La llamada a los <strong>FBs</strong> se realiza escribiendo el nombre de la instancia del <strong>FB</strong> seguido de, entre paréntesis, las asignaciones de los valores para las variables de entrada (si las hay), separadas por comas: <code>&lt;nombre_instancia&gt;(var1:=val1, var2:=val2, ...);</code></li>
+<li>
+<p>En caso de que no haya ninguna variable de entrada que especificar, simplemente se abre y se cierra paréntesis.</p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>Estacion();</code></p>
+<p><code>Lampara(TiempoEncedido:=T#2s);</code></p>
+</div>
+</li>
+</ul>
+<h3 id="estructuras-de-control">Estructuras de control<a class="headerlink" href="#estructuras-de-control" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Las <strong>estructuras de control</strong> básicas son:<ul>
+<li>Condicionales (<code>if</code>, <code>case</code>)
+    <div class="highlight"><pre><span></span><code><span class="k">IF</span><span class="w"> </span><span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="w"> </span><span class="k">THEN</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span>
+<span class="n">ELSIF</span><span class="w"> </span><span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="w"> </span><span class="k">THEN</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span>
+<span class="n">END_IF</span><span class="o">;</span>
+
+<span class="k">CASE</span><span class="w"> </span><span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span><span class="w"> </span><span class="k">OF</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;,</span><span class="w"> </span><span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;,</span><span class="w"> </span><span class="err">…</span><span class="o">,</span><span class="w"> </span><span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span>
+<span class="n">END_CASE</span><span class="o">;</span>
+</code></pre></div></li>
+<li>Bucles (<code>for</code>, <code>while</code>, <code>repeat</code>)
+    <div class="highlight"><pre><span></span><code><span class="k">FOR</span><span class="w"> </span><span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span><span class="w"> </span><span class="n">BY</span><span class="w"> </span><span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span><span class="w"> </span><span class="k">DO</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span>
+<span class="n">END_FOR</span><span class="o">;</span>
+
+<span class="k">WHILE</span><span class="w"> </span><span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="w"> </span><span class="k">DO</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span>
+<span class="n">END_WHILE</span><span class="o">;</span>
+
+<span class="k">REPEAT</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
+<span class="k">UNTIL</span><span class="w"> </span><span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span>
+<span class="n">END_REPEAT</span><span class="o">;</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="lenguaje-sfc">⤵️ Lenguaje SFC<a class="headerlink" href="#lenguaje-sfc" title="Permanent link">&para;</a></h2>
+<h3 id="reglas-sintacticas">Reglas sintácticas<a class="headerlink" href="#reglas-sintacticas" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Los nombres de las etapas en SFC (<em>Sequential Function Chart</em>) no pueden empezar por un número. Tampoco pueden tener espacios, puntos u otros caracteres especiales como eñes, interrogaciones, etc. Sí permite guiones bajos.</li>
+<li><strong>No puede haber dos etapas consecutivas ni dos transiciones consecutivas</strong>. Hay que tener especial atención a esto cuando se produzcan bifurcaciones o saltos.</li>
+</ul>
+<h3 id="anadir-etapa-transicion">Añadir etapa / transición<a class="headerlink" href="#anadir-etapa-transicion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Hacer <strong>CD</strong> sobre la <strong>etapa</strong> donde queramos introducir una nueva y seleccionar <strong><em>Add step-transition</em></strong> o <strong><em>Add step-transition after</em></strong>, dependiendo de si queremos añadirla antes o después, respectivamente, de la etapa seleccionada.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Comprobar que no quedan dos etapas o dos transiciones consecutivas. En caso contrario, borrar aquello que no sirva (<strong>CI</strong> sobre él y pulsar <em>Supr</em>).</p>
+</div>
+<h3 id="asociar-acciones-a-etapas">Asociar acciones a etapas<a class="headerlink" href="#asociar-acciones-a-etapas" title="Permanent link">&para;</a></h3>
+<h4 id="accion-continua">Acción continua<a class="headerlink" href="#accion-continua" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Hacer <strong>CD</strong> sobre la <strong>etapa</strong> a la que queramos asociar una acción no memoriza (o continua) y seleccionar <strong><em>Insert action association</em></strong> o <strong><em>Insert action association after</em></strong>, dependiendo de si queremos insertarla antes o después de las ya existentes (si las hay).</li>
+<li>
+<p>En la caja de la acción aparece en primer lugar el <strong>modificador</strong> (por defecto <code>N</code>, que significa <strong>"No memorizada"</strong>) y en segundo lugar el hueco donde debemos poner la acción a realizar (una variable booleana que queramos activar o una acción más compleja definida como acción asociada al bloque funcional).</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%205.png" width="288px" /></p>
+<ul>
+<li>
+<p>Tipos de modificadores de acciones</p>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>N</code></td>
+<td><strong>No memorizada (continua)</strong></td>
+<td><strong>Se ejecuta/activa mientras la etapa esté activa.</strong></td>
+</tr>
+<tr>
+<td><code>R0</code></td>
+<td>Reinicio</td>
+<td>La acción se desactiva.</td>
+</tr>
+<tr>
+<td><code>S0</code></td>
+<td>Activación</td>
+<td>Se ejecuta cuando se activa la etapa y continúa activa aunque la etapa se desactive.</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td>Limitada</td>
+<td>Se ejecuta cuando se activa la etapa y se desactiva cuando la etapa se desactiva o se alcanza el tiempo especificado.</td>
+</tr>
+<tr>
+<td><code>D</code></td>
+<td>Retrasada</td>
+<td>Se ejecuta un tiempo después de que se active la etapa y se desactiva cuando la etapa se desactiva.</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>Pulsada</td>
+<td>Se ejecuta dos veces: cuando se activa la etapa y una vez más en el ciclo siguiente.</td>
+</tr>
+<tr>
+<td><code>SD</code></td>
+<td>Activación con retardo</td>
+<td>Se activa aunque la etapa ya no esté activa.</td>
+</tr>
+<tr>
+<td><code>DS</code></td>
+<td>Retardo de activación</td>
+<td>Se activa solo si la etapa permanece activa.</td>
+</tr>
+<tr>
+<td><code>SL</code></td>
+<td>Activación limitada</td>
+<td>Activación con duración limitada.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Usaremos, por defecto, las <strong>acciones no memorizadas</strong>, aunque se pueden usar las otras si tiene sentido para el proyecto.</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="accion-de-entrada-o-salida">Acción de entrada o salida<a class="headerlink" href="#accion-de-entrada-o-salida" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Podemos crear acciones con activación <strong>a la entrada</strong> o <strong>a la salida</strong> de una etapa.</li>
+<li>
+<p>Estas acciones se implementan en alguno de los lenguajes de la norma y permiten realizar acciones que se ejecutan <strong>solo una vez</strong> durante la etapa, en lugar de hacerse de manera continua.</p>
+<ul>
+<li>
+<p><strong>A la entrada</strong></p>
+<ul>
+<li>Las acciones con activación a la <strong>entrada</strong> se ejecutan solo una vez <strong>inmediatamente después</strong> de entrar en la etapa donde se asocian. <strong>Posteriormente</strong> se comprueba si la condición de transición para pasar a la siguiente etapa es cierta o no.</li>
+<li>Normalmente usaremos estas acciones para inicializar variables memorizadas, actualizar contadores, etc.</li>
+<li>Para crear una de este tipo, hacer <strong>CD</strong> sobre la etapa donde la queremos asociar y seleccionar <strong><em>Add entry action</em></strong>.</li>
+<li>
+<p>Aparece un popup donde se nos pregunta por el nombre que le queremos poner y el lenguaje a utilizar. Se recomienda dejar el nombre por defecto (<code>S0_entry</code> en la figura) ya que nos indica en qué etapa está y de qué tipo es.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%206.png" width="384px" /></p>
+</li>
+<li>
+<p>En nuestros proyectos, <strong>estas acciones siempre serán en <code>ST</code></strong>, pero podrían ser implementadas en cualquier otro lenguaje de la norma.</p>
+</li>
+<li>
+<p>Una vez creada, aparece en el programa <code>SFC</code> como un cuadrado con una <strong>E</strong> en la esquina inferior izquierda de la etapa.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%207.png" width="288px" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>A la salida</strong></p>
+<ul>
+<li>Las acciones con activación <strong>a la salida</strong> se ejecutan solo una vez inmediatamente antes de pasar a la siguiente etapa. Esto implica que <strong>antes</strong> de que se ejecute esta acción, la condición de transición para pasar a la siguiente etapa <strong>debe ser cierta</strong>.</li>
+<li>Normalmente usaremos estas acciones para inicializar variables memorizadas, actualizar contadores, etc.</li>
+<li>Para crear una de este tipo, hacer <strong>CD</strong> sobre la etapa donde la queremos asociar y seleccionar <strong><em>Add exit action</em></strong>.</li>
+<li>
+<p>Aparece un <em>popup</em> donde se nos pregunta por el nombre que le queremos poner y el lenguaje a utilizar. Se recomienda dejar el nombre por defecto (<code>S0_exit</code> en la figura) ya que nos indica en qué etapa está y de qué tipo es.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%208.png" width="384px" /></p>
+</li>
+<li>
+<p>En nuestros proyectos, <strong>estas acciones siempre serán en <code>ST</code></strong>, pero podrían ser implementadas en cualquier otro lenguaje de la norma.</p>
+</li>
+<li>
+<p>Una vez creada, aparece en el programa <code>SFC</code> como un cuadrado con una <strong>X</strong> en la esquina inferior derecha de la etapa.       <br />
+<img alt="Imagen" src="../../images/01_conceptos/image%209.png" width="288px" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Nada impide que una etapa tenga asociadas <strong>una o varias acciones no memorizadas</strong>, una con activación a la entrada y otra con activación a la salida.</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="accion-principal-todo">Acción principal (TODO)<a class="headerlink" href="#accion-principal-todo" title="Permanent link">&para;</a></h4>
+<hr />
+<h2 id="estructuras-de-evolucion">🔀 Estructuras de evolución<a class="headerlink" href="#estructuras-de-evolucion" title="Permanent link">&para;</a></h2>
+<h3 id="secuencia-basica">Secuencia básica<a class="headerlink" href="#secuencia-basica" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Una secuencia básica se compone de una <strong>sucesión lineal de etapas y transiciones</strong>, donde las primeras se van a ir ejecutando en secuencia conforme las condiciones asociadas a las segundas se vayan cumpliendo.</p>
+</li>
+<li>
+<p>Normalmente, al final de la secuencia se producirá un salto hacia atrás (o el inicio) en el programa.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2010.png" width="288px" /></p>
+</li>
+<li>
+<p>Para insertar un salto detrás de una transición, hay que hacer <strong>CD</strong> sobre la transición y seleccionar <strong><em>Insert jump after</em></strong>. Solo hay que indicar el nombre de la etapa a la que queremos saltar.</p>
+</li>
+</ul>
+<h3 id="bifurcacion">Bifurcación<a class="headerlink" href="#bifurcacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Tras una etapa podemos realizar una <strong>bifurcación</strong> en distintas ramas en función de distintas condiciones. Esto nos permite dirigir la secuencia por cambio si ocurre un evento y por otros distintos si ocurren otros eventos.</p>
+</li>
+<li>
+<p>En el ejemplo de la figura, si la etapa <code>Init</code> está activa y se activa <code>Execute</code>, el programa evolucionará por la rama de la izquierda llegando a <code>S0</code>. Si lo que se activa es <code>Restore</code>, el programa evolucionará por la derecha pasando a <code>Sr</code> y, una vez se active <code>Restaurado</code>, la secuencia pasará a <code>S0</code>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2011.png" width="336px" /></p>
+</li>
+<li>
+<p>Para realizar una bifurcación, hacer <strong>CD</strong> sobre la <strong>transición</strong> donde se quiera hacer la bifurcación (<code>Execute</code> en el ejemplo) y seleccionar <strong><em>Insert branch right</em></strong>.</p>
+</li>
+<li>
+<p>Nada impide que se pueda hacer una bifurcación con más de dos ramas.</p>
+</li>
+<li>
+<p>Es recomendable que las condiciones de la bifurcación sean excluyentes pero nada impide que no lo sean. El programa tomará el camino de la primera transición cuya condición sea verdadera.</p>
+</li>
+<li>
+<p>Si ocurriera que varias o todas las condiciones son verdaderas a la vez, el programa evolucionará por la rama de la izquierda. <strong>Aunque esto puede ser útil en algunos casos, esto suele indicar que hay un mal diseño en el programa.</strong></p>
+</li>
+</ul>
+<h3 id="paralelismo">Paralelismo<a class="headerlink" href="#paralelismo" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Si queremos que el programa evolucione por dos secuencias en paralelo (se ejecutan simultáneamente) podemos incluir un paralelismo en el código.</p>
+</li>
+<li>
+<p>En el ejemplo de la figura, si la etapa <code>Init</code> está activa y se activa <code>Execute</code>, el programa evolucionará por ambas ramas a la vez, activando los estados <code>S0</code> y <code>Sr</code> de manera simultánea (y por tanto, <code>LuzRoja</code> y <code>Restaura</code>).</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2012.png" width="480px" /></p>
+</li>
+<li>
+<p>En la transición con condición <code>NOT Pulsador OR S0.t&gt;T#5s</code> se produce un punto de sincronización ya que, para que el programa evolucione a <code>S1</code> debe ocurrir que <code>S0</code> y <code>Sr2</code> estén activas y, además, que la condición <code>NOT Pulsador OR S0.t&gt;T#5s</code> sea cierta. Por tanto, podemos decir que el programa <em>esperará</em> hasta que termine la rama de la derecha antes de evolucionar.</p>
+</li>
+</ul>
+<hr />
+<h2 id="crear-visualizacion">🖥️ Crear visualización<a class="headerlink" href="#crear-visualizacion" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Hacer <strong>CD</strong> sobre la sección <code>VISUs</code>.</p>
+</li>
+<li>
+<p>Seleccionar <code>Add → Visualization</code> y pulsar en <strong>Open</strong> en la ventana <em>popup</em>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2013.png" width="240px" /></p>
+</li>
+<li>
+<p>En la parte derecha de la pantalla aparecerá la sección <code>Toolbox</code> donde, en la sección <code>Basic</code> aparecen las formas básicas. Arrastrar a la visualización los elementos que se quieran.</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Si no aparece la sección, mostrarlo entrando en el <strong>Menú</strong> <code>View → Toolbox</code></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Recomendación</p>
+<p>Se recomienda utilizar <strong>rectángulos</strong> para crear botones tanto para las entradas como para las salidas.</p>
+</div>
+<h3 id="botones-para-cambiar-valores-de-variables">Botones para cambiar valores de variables<a class="headerlink" href="#botones-para-cambiar-valores-de-variables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Dibujar un rectángulo con el tamaño deseado.</p>
+</li>
+<li>
+<p>Escribir dentro la etiqueta que queramos que aparezca en el botón.</p>
+</li>
+<li>
+<p>Introducir la variable de tipo <code>BOOL</code> que queremos asociar a dicho botón. Dependiendo del comportamiento que queramos que tenga el botón, esta variable se introduce en una sección distinta dentro de <code>Properties → Input Configuration</code> (la pestaña <code>Properties</code> aparece a la derecha, normalmente combinada con <code>Toolbox</code>).</p>
+<ul>
+<li>
+<p>Si queremos que la variable cambie de valor <strong>mientras</strong> se pulsa el botón con el ratón pero vuelva a su valor anterior una vez soltado el ratón, introduciremos la variable en la sección <code>Tap</code>:</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2014.png" width="240px" /></p>
+</li>
+<li>
+<p>Si queremos que la variable cambie de valor cada vez que pulsemos el botón (el valor conmutará entre <code>TRUE</code> y <code>FALSE</code>) lo introduciremos en la sección <code>Toggle</code>:</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2015.png" width="240px" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="exportar-e-importar">🔄 Exportar e importar<a class="headerlink" href="#exportar-e-importar" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Podemos exportar <code>POUs</code> y <code>VISUs</code> desde una solución de <strong>TC3</strong> e importarla de nuevo en otra distinta. De esta manera podemos reutilizar código de distintas proyectos.</li>
+<li>Para realizar esto, en la solución origen, simplemente hay que hacer <strong>CD</strong> sobre el <code>POU</code> o <code>VISU</code> a exportar y seleccionar <strong><em>Export to ZIP</em></strong>. Se selecciona donde guardar el archivo exportado y se pulsa <strong>Save</strong>.</li>
+<li>Posteriormente, en la solución destino, hacer <strong>CD</strong> sobre la carpeta <code>POU</code> o <code>VISU</code> y seleccionar <strong><em>Import from ZIP</em></strong>. Se busca el archivo correspondiente y se pulsa <strong>OK</strong>.</li>
+</ol>
+<hr />
+<h2 id="guardar-y-mover-proyectos">💾 Guardar y mover proyectos<a class="headerlink" href="#guardar-y-mover-proyectos" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Se ha detectado que el sincronizar la carpeta del proyecto usando servicios como <strong>Google Drive</strong> está produciendo problemas a la hora de poder abrir los proyectos. Posiblemente esto se deba a que algunos ficheros no son sincronizados correctamente por Drive (por motivos desconocidos), lo que lleva a que, a la hora de abrir el proyecto, no se carguen los ficheros necesarios. </p>
+<p><strong>Se recomienda, por tanto, no usar este método sino alguno de los otros.</strong></p>
+</div>
+<h3 id="usando-la-carpeta-completa">Usando la carpeta completa<a class="headerlink" href="#usando-la-carpeta-completa" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Es la manera más sencilla de llevarse un proyecto desde un equipo a otro.</li>
+<li>
+<p>Solo hay que copiar la carpeta raíz en un <em>pendrive</em> y pegar la carpeta en el equipo destino.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2017.png" width="132px" /></p>
+</li>
+<li>
+<p>Posteriormente, hacer <strong>DCI</strong> sobre el fichero de <strong><em>Solution</em></strong> (<code>.sln</code>) para que se abra de nuevo en TC3.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Si la carpeta ha sido comprimida para ser trasladada, hay que asegurarse de haber descomprimido la carpeta completa en el destino antes de abrir el proyecto.</p>
+</div>
+<h3 id="exportando-como-tnzip">Exportando como <code>.tnzip</code><a class="headerlink" href="#exportando-como-tnzip" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>La entrega final del proyecto deberá seguir este procedimiento.</p>
+</div>
+<ol>
+<li>Este proceso genera el mínimo tamaño posible para trasladar un proyecto.</li>
+<li>Seleccionar <code>File → Save [nombre_del_proyecto] as Archive...</code>.</li>
+<li>Seleccionar dónde guardar el proyecto, darle un nombre y asegurarse de que el formato es de tipo <code>.tnzip</code>.</li>
+<li>Para volver a abrir el proyecto:</li>
+<li>Abrir TC3.</li>
+<li>Seleccionar <code>File → Open → Solution from Archive...</code>.</li>
+<li>Buscar el archivo <code>.tnzip</code>.</li>
+<li>Seleccionar (o crear si no existe) una carpeta donde se va a generar la <em>Solution</em>.</li>
+<li>En principio, se puede seleccionar siempre la misma carpeta cada vez que se repita este procedimiento.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Si al abrir el proyecto de nuevo y compilar obtienes errores no relacionados con el código que antes no tenías:</p>
+<ul>
+<li>Cambiar el tipo de proyecto a TwinCAT RT (x86)</li>
+<li>Recompilar</li>
+<li>Volver a cambiar a TwinCAT RT (x64)</li>
+<li>Volver a recompilar</li>
+</ul>
+</div>
+<h3 id="usando-git">Usando GIT<a class="headerlink" href="#usando-git" title="Permanent link">&para;</a></h3>
+<p>TwinCAT3, al estar basado en Visual Studio, tiene compatibilidad directa con GitHub. 
+Se recomienda seguir el tutorial en este video:</p>
+<p><a href="https://www.youtube.com/watch?v=1g6eYnlzKtA">PLC Programming using TwinCAT 3 - Version control</a></p>
+<hr />
+<h2 id="convenciones-de-nombres">📝 Convenciones de nombres<a class="headerlink" href="#convenciones-de-nombres" title="Permanent link">&para;</a></h2>
+<p>Se recomienda llamar a todos los elementos del proyecto con el nombre adecuado <strong>desde el principio</strong>, ya que renombrar <em>a posteriori</em> puede acarrear problemas derivados del acceso a elementos cuya ruta ha cambiado. No obstante, si es necesario renombrar los elementos, el procedimiento es como sigue.</p>
+<h3 id="soluciones">Soluciones<a class="headerlink" href="#soluciones" title="Permanent link">&para;</a></h3>
+<p>Se recomienda llamar a las soluciones de TC3 de la misma forma que los Proyectos de TC3.</p>
+<p>Para renombrarlo una vez creado:</p>
+<ol>
+<li>
+<p><strong>CD</strong> sobre el nombre de la solución y seleccionar <strong><em>Rename</em></strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2018.png" width="240px" /></p>
+</li>
+<li>
+<p>Escribir el nuevo nombre.</p>
+</li>
+</ol>
+<h3 id="proyectos-twincat3">Proyectos TwinCAT3<a class="headerlink" href="#proyectos-twincat3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Se recomienda llamar a los proyectos TC3 de la siguiente forma:</p>
+<ul>
+<li>
+<p><strong>Para los ejemplos</strong>: <code>TC3_[nombre]</code><br />
+  donde el nombre debe ser algo significativo.</p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>TC3_Lampara</code></p>
+<p><code>TC3_Carro</code></p>
+</div>
+</li>
+<li>
+<p><strong>Para los trabajos finales</strong>: <code>[codigo]_TC3_G[grupo]</code><br />
+  donde <code>codigo</code> debe escogerse según la asignatura (<code>AIM</code>, <code>AIE</code>, <code>SR</code>, etc.) y <code>grupo</code> debe ser el número del grupo con dos dígitos (<code>01</code>, <code>02</code>, ...).</p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>AIM_TC3_G01</code></p>
+<p><code>SR_TC3_G12</code></p>
+</div>
+</li>
+<li>
+<p>Códigos de las asignaturas:</p>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Asignatura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AIM</td>
+<td>Automatización Industrial de GIERM</td>
+</tr>
+<tr>
+<td>AIE</td>
+<td>Automatización Industrial de GIEI o GIEI+IEL</td>
+</tr>
+<tr>
+<td>SR</td>
+<td>Sistemas Robotizados de GITI</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Para renombrarlo una vez creado:</p>
+<ul>
+<li>
+<p><strong>CD</strong> sobre el nombre del proyecto TC3 y seleccionar <em>Rename</em>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2019.png" width="240px" /></p>
+</li>
+<li>
+<p>Escribir el nuevo nombre.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="proyectos-plc">Proyectos PLC<a class="headerlink" href="#proyectos-plc" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Se recomienda llamar a los proyectos PLC de la forma <code>[nombre]_PLC</code> para los ejemplos o <code>[estacion]_[nivel]_PLC</code> para los trabajos, donde el nombre debe ser algo significativo.</p>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>Lampara_PLC</code></p>
+<p><code>FMS201_Monolitico_PLC</code></p>
+</div>
+</li>
+<li>
+<p>Para renombrarlo una vez creado:</p>
+<ol>
+<li>
+<p><strong>CD</strong> sobre el nombre del proyecto PLC y seleccionar <em>Rename</em>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2020.png" width="240px" /></p>
+</li>
+<li>
+<p>Escribir el nuevo nombre.</p>
+</li>
+<li>
+<p>Aparecerá un aviso indicando que si se cambia el nombre del proyecto no se van a poder hacer cambios online (en caso de que se esté ejecutando). <strong>CI</strong> en Sí.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2021.png" width="432px" /></p>
+</li>
+<li>
+<p>Tras unos segundos, el proyecto PLC habrá cambiado de nombre.</p>
+</li>
+<li><strong>Importante:</strong> Puede ocurrir que, tras el cambio de nombre, al hacer <strong>CI</strong> sobre el proyecto, salga un aviso de error por no encontrar el nombre anterior. Esto se debe solucionar haciendo <strong>CI</strong> sobre <code>Build → Rebuild Solution</code>.</li>
+</ol>
+</li>
+</ul>
+<h3 id="bloques-funcionales">Bloques Funcionales<a class="headerlink" href="#bloques-funcionales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Se recomienda llamar a los bloques funcionales de la forma <code>FB_[nombre]_[lenguaje]</code>, donde el nombre debe ser algo significativo.</li>
+<li>
+<p>Los lenguajes suelen ser:</p>
+<ul>
+<li><code>ST</code> (<em>Structured Text</em>)</li>
+<li><code>SFC</code> (<em>Sequential Function Chart</em>)</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Ejemplo</p>
+<p><code>FB_Estacion_ST</code></p>
+<p><code>FB_Coordinador_ST</code></p>
+<p><code>FB_Alimentador_SFC</code></p>
+</div>
+</li>
+<li>
+<p>Para renombrarlo una vez creado:</p>
+<ol>
+<li><strong>CD</strong> sobre el nombre del <strong>FB</strong> y seleccionar <strong><em>Rename</em></strong>.</li>
+<li>Escribir el nuevo nombre.</li>
+<li>
+<p>Aparecerá un aviso indicando que se van a adaptar todas las referencias en el proyecto. Pulsar en <strong><em>Yes</em></strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2022.png" width="384px" /></p>
+</li>
+<li>
+<p>Aparecerá una ventana mostrando todos los cambios que se van a realizar. Pulsar en <strong>OK</strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2023.png" width="598px" /></p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Se recomienda llamar a las variables con nombres significativos.</li>
+<li>Si las variables se van a asociar con los terminales de entrada y salida, es <strong>obligatorio</strong> llamarlas con el nombre indicado en la columna <strong>Variable</strong> de la tabla de E/S.</li>
+<li>Para renombrar una variable y que ese cambio se corrija en todas las referencias que se hagan a la misma en el proyecto, hay que hacer <strong>CD</strong> sobre el nombre de la variable y seleccionar <code>Refactoring → Rename</code>.</li>
+<li>
+<p>Aparecerá un <em>popup</em> donde se debe indicar el nuevo nombre.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2024.png" width="240px" /></p>
+</li>
+<li>
+<p>Aparecerá una ventana mostrando todos los cambios que se van a realizar. Pulsar en <strong>OK</strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2025.png" width="626px" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="ejecutar-programa">▶️ Ejecutar programa<a class="headerlink" href="#ejecutar-programa" title="Permanent link">&para;</a></h2>
+<p>Una vez el programa está implementado (independientemente del lenguaje utilizado):</p>
+<ul>
+<li>Compilar el proyecto: Menú <code>Build → Build [nombre del proyecto]</code>.</li>
+<li>Asegurarse de que no hay errores.</li>
+<li>
+<p>Si has declarado variables en las <strong>imágenes de entrada y/o salida</strong>:     </p>
+<ul>
+<li>
+<p>Comprobar que las variables aparecen en la zona de la instancia.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2026.png" width="200px" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Si quieres utilizar el <strong>Equipo Remoto</strong>:</p>
+<ul>
+<li>Vincular las variables con los terminales correspondientes según la tabla de E/S:<ul>
+<li><strong>DCI</strong> sobre la variable a vincular.</li>
+<li>Seleccionar el terminal/canal deseado del listado que aparece.</li>
+</ul>
+</li>
+<li>Buscar el equipo remoto.</li>
+</ul>
+</li>
+<li>
+<p>Si quieres usar el <strong>Runtime local</strong></p>
+<ul>
+<li>
+<p>Asegurarte de que seleccionar <code>`Local</code> en el desplegable del <code>Target</code>. </p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2027.png" width="200px" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Activar la configuración en el <code>Target</code> (<strong><em>Activate Configuration</em></strong>) y activar el modo de ejecución (<strong><em>Run Mode</em></strong>). Esto último te lo pregunta TwinCAT3 en una ventana <em>popup</em>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2028.png" width="50px" /></p>
+</li>
+<li>
+<p>Descargar el programa en el <code>Target</code> (<strong><em>Login</em></strong>), donde se preguntará, en un <em>popup</em>, si quieres crear un puerto de comunicación con el <code>Target</code> y descargar el programa. Pulsar en <strong><em>Yes</em></strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2029.png" width="400px" /></p>
+</li>
+<li>
+<p>Ejecutar el programa (<strong><em>Start</em></strong>).</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2030.png" width="70px" /></p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Para poder modificar de nuevo el programa, primero hay que parar el programa (<strong><em>Stop</em></strong>) [<strong>recomendado</strong>] y posteriormente hacer <strong><em>Logout</em></strong>.</p>
+<p><img alt="Imagen" src="../../images/01_conceptos/image%2031.png" width="70px" /></p>
+</div>
+<hr />
+<h2 id="activardesactivar-hardware">🔌 Activar/desactivar <em>hardware</em><a class="headerlink" href="#activardesactivar-hardware" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Si has vinculado las variables de tu programa con el <strong>equipo remoto</strong> (hiciste la búsqueda del equipo remoto y la exploración de los módulos de E/S), cuando quieras probar tu programa en el <strong><em>Runtime Local</em></strong>, aparecerá una ventana <em>popup</em> indicando un error.</li>
+<li>Esto se debe a que TC3 quiere establecer conexión con el <em>hardware</em> al que estuviste conectado pero no puede, ya que el <code>Target</code> es el local.</li>
+<li>Para evitar esto, solo tienes que deshabilitar el <em>hardware</em> haciendo <strong>CD</strong> sobre el dispositivo buscado y seleccionar <strong><em>Disable</em></strong>.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Recuerda <strong>volver a habilitarlo</strong> cuando quieras volver a usar el equipo remoto.</p>
+</div>
+<hr />
+<h2 id="busqueda-de-equipos">🌐 Búsqueda de equipos<a class="headerlink" href="#busqueda-de-equipos" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Recomendación</p>
+<p>Hay un video de ejemplo en el Campus Virtual en <code>Automatización &gt; Videos &gt; TC3</code> con nombre <code>9_Runtime_Target_*.mkv</code>.</p>
+</div>
+<hr />
+<h2 id="enlace-de-variables-y-es">🔗 Enlace de variables y E/S<a class="headerlink" href="#enlace-de-variables-y-es" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Recomendación</p>
+<p>Hay un video de ejemplo en el Campus Virtual en <code>Automatización &gt; Videos &gt; TC3</code> con nombre <code>9_Runtime_Target_*.mkv</code>.</p>
+</div>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/famoreno/tc3_docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/ui-course.js"></script>
+      
+    
+  </body>
+</html>
